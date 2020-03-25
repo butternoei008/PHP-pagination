@@ -1,11 +1,5 @@
 <?php
 function page_navi($total_item, $cur_page, $per_page = 10, $query_str = "", $min_page = 5) {
-    echo "total_item: ".$total_item;
-    echo "cur_page: ".$cur_page;
-    echo "per_page: ".$per_page;
-    echo "query_str: ".$query_str;
-    echo "min_page: ".$min_page;
-
     $total_page = ceil($total_item / $per_page);
     $cur_page = (isset($cur_page)) ? $cur_page : 1;
     $diff_page = NULL;
